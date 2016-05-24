@@ -1,10 +1,84 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>测试1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>混合布局</title>
+<style>
+*{
+	margin:0;
+	padding:0;
+}
+.head{
+	width:100%;height:50px;background: #ccc; position:absolute;top:0;left:0;
+}
+.footer{
+	width:100%;height:50px;background: #cdf; /*position:absolute;bottom:0;left:0;8*/
+	clear:both;
+	margin:0;
+}
+.main{
+	width:960px;background: #ddd;
+	margin:60px 150px;
+}
+.mleft{
+	width:200px;background: red;
+	float:left;
+}
+.mright{
+	width:740px;background: green;
+	float:right;
+}
+.learnform{
+	padding:1.5em;
+    height: 960px;
+    padding-bottom: 60px;
+    cursor:pointer;
+}
+.mr1{
+	height:500px; background:#dfd;
+	margin-bottom: 20px;
+}
+.mr2{
+	height:400px;background: #cfe;
+	margin-bottom: 20px;
+}
+.mr3{
+	height:300px;background: #ccc;
+}
+</style>
 </head>
 
 <body>
-<p>喂，你好吗？</p>
+	<div class="head">
+		head1
+	</div>
+	<div class="main">
+		<div class="mleft">
+			<span>前端学习计划</span>
+			<ul class="learnform">
+				<li>HTML</li>
+				<li>XHTML</li>
+				<li>HTML5</li>
+				<li>CSS</li>
+				<li>CSS#</li>
+				<li>TCP/IP</li>
+				<li>JavaScript</li>
+				<li>HTMLDOM</li>
+				<li>jQuery</li>
+				<li>JSON</li>
+				<li>DHTML</li>
+				<li>E4X</li>
+				<li>WMLScropt</li>
+			</ul>
+		</div>
+		<div class="mright">
+			<div class="mr1">1</div>
+			<div class="mr2">2</div>
+			<div class="mr3">3</div>
+		</div>
+	</div>
+	<div class="footer">
+		foot
+	</div>
 </body>
 </html>
